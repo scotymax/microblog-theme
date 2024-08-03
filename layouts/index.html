@@ -1,23 +1,23 @@
 {{ define "main" }}
-<div class="post-list">
-{{ if or .IsHome .Site.Params.paginate_categories }}
-	{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
-	{{ $list := $paginator.Pages }}
-	{{ range $list  }}
-		{{ partial "post-item.html" . }}
+	<div class="post-list">
+	{{ if or .IsHome .Site.Params.paginate_categories }}
+		{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
+		{{ $list := $paginator.Pages }}
+		{{ range $list  }}
+			{{ partial "post-item.html" . }}
+		{{ end }}
+	{{ else }}
+		{{ $list := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+		{{ range $list  }}
+			{{ partial "post-item.html" . }}
+		{{ end }}
 	{{ end }}
-{{ else }}
-	{{ $list := where .Site.Pages.ByDate.Reverse "Type" "post" }}
-	{{ range $list  }}
-		{{ partial "post-item.html" . }}
-	{{ end }}
-{{ end }}
-</div>
-{{ if .IsHome }}
-	{{ if .Site.Params.paginate_home }}
+	</div>
+	{{ if .IsHome }}
+		{{ if .Site.Params.paginate_home }}
+			{{ partial "pagination" . }}
+		{{ end }}
+	{{ else if .Site.Params.paginate_categories }}
 		{{ partial "pagination" . }}
 	{{ end }}
-{{ else if .Site.Params.paginate_categories }}
-	{{ partial "pagination" . }}
-{{ end }}
 {{ end }}
