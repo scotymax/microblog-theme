@@ -205,6 +205,11 @@ a.button::after,
 button.button::after {
 	display: none;
 }
+.avatar {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
 .note {
 	border-radius: 1rem;
 	padding: 0.75rem;
@@ -357,11 +362,8 @@ nav.nav-main.open button::after {
 .profile {
 	margin-top: 5rem;
 }
-.profile-avatar {
-	height: 100px;
-	width: 100px;
+.profile .avatar {
 	margin: auto;
-	border-radius: 50%;
 }
 .profile-name {
 	margin: 0 auto;	
@@ -403,11 +405,9 @@ nav.nav-main.open button::after {
 	border-color: white;
 	outline: none;
 }
-
 /* Posts */
 .post-list {}
 .post-item {}
-.post-link {}
 .post-date {
 	margin-top: 2rem;
 	font-size: 0.75rem;
@@ -431,23 +431,33 @@ h2.post-date  {
 .post-author {
 	display: flex;
 	gap: 1rem;
+}
+.post-author .avatar {
+	height: 50px;
+	width: 50px;
+}
+.author-name, 
+.author-username {
+	display: block;
 	font-size: 0.75rem;
 	line-height: 1;
 }
-.author-avatar {
-	height: 50px;
-	width: 50px;
-	margin: auto;
-	border-radius: 50%;
+.post-reply-to {
+	margin: 2.5rem 0;
+	border-radius: 1rem;
+	padding: 0.75rem;
+	background-color: var(--background-light);
+	color: var(--primary);
+	font-size: 0.75rem;
+	text-align: center;
 }
-.author-name {
-	display: block;
+.post-reply-to .avatar {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 0 0.25rem;
+	vertical-align: top;
 }
-.author-username {
-	display: block;
-}
-
-.post-reply-to {}
 .post-reply-to-username {}
 
 .nav-pagination {}
