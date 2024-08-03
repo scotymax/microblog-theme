@@ -241,6 +241,9 @@ svg.scotymax path {
 	padding: 0;
 }
 /* Partial: Header */
+.header {
+	margin: 2.5rem 0;
+}
 .header-logo {
 	position: relative;
 	display: block;
@@ -398,9 +401,12 @@ nav.nav-main.open button::after {
 /* Partial: Profile */
 .profile {
 	margin-top: 5rem;
+	text-align: center;
 }
 .profile .avatar {
-	margin: auto;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
 }
 .profile .author-name {
 	margin: 0 auto;	

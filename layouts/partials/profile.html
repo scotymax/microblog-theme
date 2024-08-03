@@ -1,7 +1,4 @@
-<header class="profile">
-	<a href="/about-me/">
-		<img class="avatar" src="{{ .Site.Author.avatar }}" />
-	</a>
-	<h1 class="author-name" rel="me">{{ .Site.Author.name }}</h1>
-	<div class="description">{{ .Site.Params.description | safeHTML }}</div>
-</header>
+<div class="profile">
+	Follow <img class="avatar" src="{{ .Site.Author.avatar }}" /> <a href="https://micro.blog/{{ .Site.Author.username }}" rel="me"><span class="author-username">@{{ .Site.Author.username }}</span> on Micro.blog</a>
+</div>
+<hr />
