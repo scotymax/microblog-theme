@@ -407,6 +407,7 @@ nav.nav-main.open button::after {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
+	vertical-align: middle;
 }
 .profile .author-name {
 	margin: 0 auto;	
@@ -498,7 +499,7 @@ h2.post-date  {
 	width: 25px;
 	height: 25px;
 	margin: 0 0.25rem;
-	vertical-align: top;
+	vertical-align: middle;
 }
 .post-reply-to-username {}
 
