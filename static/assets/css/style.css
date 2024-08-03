@@ -170,6 +170,9 @@ tfoot td {
 	background-color: var(--background-light);
 }
 /* Common */
+.header,
+.main,
+.footer, 
 .container {
 	display: block;
 	max-width: 600px;
@@ -237,10 +240,7 @@ svg.scotymax path {
 }
 /* Partial: Header */
 .header {
-	display: block;
 	margin: 2.5rem auto;
-	padding: 0 12.5px;
-	max-width: 600px;
 }
 .header-logo {
 	position: relative;
@@ -524,6 +524,9 @@ h2.post-date  {
 }
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
+	.header, 
+	.main, 
+	.footer, 
 	.container {
 		padding: 0 20px;
 	}
