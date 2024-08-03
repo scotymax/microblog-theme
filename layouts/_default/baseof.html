@@ -8,9 +8,9 @@
 	</div>
 	{{ partial "footer.html" . }}
 	{{ partial "custom_footer.html" . }}
+	<script src="{{ "assets/js/scripts.js" | relURL }}?{{ .Site.Params.theme_seconds }}"></script>
 	{{ range .Site.Params.plugins_js }}
 	<script src="{{ . }}"></script>
 	{{ end }}
-	<script src="{{ "assets/js/scripts.js" | relURL }}?{{ .Site.Params.theme_seconds }}"></script>
 </body>
 </html>
