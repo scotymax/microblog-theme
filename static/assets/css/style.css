@@ -371,15 +371,6 @@ nav.nav-main.open button::after {
 .footer {}
 .footer ul {}
 .nav-pagination {}
-.post-item {}
-.post-item section header h2 {}
-.post-body {}
-.post-link {}
-.post-date {
-	margin-top: 2rem;
-}
-.dt-published {}
-.post-list {}
 .profile {}
 .profile-avatar {
 	height: 100px;
@@ -390,12 +381,20 @@ nav.nav-main.open button::after {
 .profile-name {
 	margin: 0 auto;	
 }
-.profile-role {
+.profile-description {
 	text-align: center;
 }
-/* post */
+/* Posts */
+.post-list {}
+.post-item {}
+.post-link {}
+.post-date {
+	margin-top: 2rem;
+}
+
 .post {}
-.headline {}
+.post-title {}
+.post-headline {}
 .post-body {}
 .post-body img {
 	padding: 4px;
@@ -406,9 +405,8 @@ nav.nav-main.open button::after {
 .post-meta {}
 .author-name {}
 .author-name {}
-.post {}
-.post-title {}
-.post-in-reply-to {}
+.post-reply-to {}
+.post-reply-to-username {}
 /* reply */
 
 /* section */
