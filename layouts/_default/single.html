@@ -1,19 +1,19 @@
 {{ define "main" }}
-<article class="post">
-	<header>
-		<h1>{{ .Title }}</h1>
-	</header>
-	<div class="post-body">
-		{{ .Content }}
-	</div>
-	<footer>
-		<address class="post-author">
-			<img class="avatar" alt="{{ .Site.Author.username }} avatar" src="{{ .Site.Author.avatar }}" />
-			<div>
-				<span class="author-name">{{ .Site.Author.name }}</span>
-				<span class="author-username"><a href="https://micro.blog/{{ .Site.Author.username }}" rel="author">@{{ .Site.Author.username }}</a></span>
-			</div>
-		</address>
-	</footer>
-</article>
+	<article class="post">
+		<header>
+			<h1>{{ .Title }}</h1>
+		</header>
+		<div class="post-body">
+			{{ .Content }}
+		</div>
+		<footer>
+			<address class="post-author">
+				<img class="avatar" alt="{{ .Site.Author.username }} avatar" src="{{ .Site.Author.avatar }}" />
+				<div>
+					<span class="author-name">{{ .Site.Author.name }}</span>
+					<span class="author-username"><a href="https://micro.blog/{{ .Site.Author.username }}" rel="author">@{{ .Site.Author.username }}</a></span>
+				</div>
+			</address>
+		</footer>
+	</article>
 {{ end }}
