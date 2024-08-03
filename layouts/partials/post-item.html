@@ -1,21 +1,19 @@
 <article class="post-item">
 	{{ if .Title }}
-	<section>
-		<header>
-			<h2><a href="{{ .Permalink }}" class="post-name">{{ .Title }}</a></h2>
-		</header>
-		<div class="post-body">
-			{{ .Content }}
-		</div>
-	</section>
+	<header>
+		<h2><a href="{{ .Permalink }}" class="post-name">{{ .Title }}</a></h2>
+	</header>
+	<div class="post-body">
+		{{ .Content }}
+	</div>
 	{{ else }}
 	<div class="post-body">
 		{{ .Content }}
 	</div>
 	{{ end }}
 	<aside class="post-date">
-		<a href="{{ .Permalink }}" class="post-link">
-			→ <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}" class="dt-published">{{ .Date.Format "3:04 PM, Jan 2" }}</time>
+		<a href="{{ .Permalink }}">
+			→ <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "3:04 PM, Jan 2" }}</time>
 		</a>
 	</aside>
 </article>
