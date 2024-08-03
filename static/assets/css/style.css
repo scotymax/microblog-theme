@@ -171,6 +171,7 @@ tfoot td {
 }
 /* Common */
 .container {
+	display: block;
 	max-width: 600px;
 	margin: auto;
 	padding: 0 12.5px;
@@ -353,7 +354,9 @@ nav.nav-main.open button::after {
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 /* Partial: Profile */
-.profile {}
+.profile {
+	margin-top: 5rem;
+}
 .profile-avatar {
 	height: 100px;
 	width: 100px;
@@ -384,6 +387,8 @@ nav.nav-main.open button::after {
 .footer form {}
 .footer form input.field {
 	display: block;
+	box-sizing: border-box;
+	width: 270px;
 	margin: 0 auto;
 	border: 2px solid var(--primary);
 	border-radius: 1rem;
