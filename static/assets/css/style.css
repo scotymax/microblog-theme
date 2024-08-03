@@ -371,7 +371,7 @@ nav.nav-main.open button::after {
 }
 /* Partial: Footer */
 .footer {
-	margin-bottom: 5rem;
+	margin: 5rem 0;
 }
 .footer ul {
 	margin: 0 auto 1.5rem;
@@ -411,8 +411,11 @@ nav.nav-main.open button::after {
 .post-date {
 	margin-top: 2rem;
 	font-size: 0.75rem;
+	text-transform: uppercase;
 }
-
+h2.post-date  {
+	margin: 0;
+}
 .post {}
 .post-title {}
 .post-headline {}
@@ -423,14 +426,43 @@ nav.nav-main.open button::after {
 	border-radius: 1rem;
 	box-sizing: border-box;
 }
-.post-meta {}
+.post-author {}
+.author-avatar {
+	height: 50px;
+	width: 50px;
+	margin: auto;
+	border-radius: 50%;
+}
 .author-name {}
-.author-name {}
+.author-username {}
+
 .post-reply-to {}
 .post-reply-to-username {}
 
 .nav-pagination {}
 
+/* Plugin: Conversation.js */
+.microblog_conversation {
+	
+}
+.microblog_post {
+	
+}
+.microblog_user {
+	
+}
+.microblog_avatar {
+	
+}
+.microblog_fullname {
+	
+}
+.microblog_text {
+	
+}
+.microblog_time {
+	
+}
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
 	.container {

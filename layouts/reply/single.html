@@ -4,7 +4,7 @@
 		{{ with .Title }}
 		<h1>{{ . }}</h1>
 		{{ end }}
-		<h2 class="post-headline">
+		<h2 class="post-date">
 			<a href="{{ .Permalink }}">
 				<time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
 			</a>
@@ -21,14 +21,14 @@
 	<div class="post-body">
 		{{ .Content }}
 	</div>
+	<footer>
+		<address class="post-author">
+			<a href="https://micro.blog/{{ .Site.Author.username }}" rel="author"><img class="author-avatar" alt="{{ .Site.Author.username }} avatar" src="{{ .Site.Author.avatar }}" /></a>
+			<div>
+				<span class="author-name">{{ .Site.Author.name }}</span>
+				<span class="author-username"><a href="https://micro.blog/{{ .Site.Author.username }}" rel="author">@{{ .Site.Author.username }}</a></span>
+			</div>
+		</address>
+	</footer>
 </article>
-<section id="post-meta" class="post-meta">
-	<a href="/">
-		<img class="author-avatar" alt="{{ .Site.Author.username }} avatar" src="{{ .Site.Author.avatar }}" />
-		<div>
-			<span class="author-name">{{ .Site.Author.name }}</span>
-			<span class="author-username"><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></span>
-		</div>
-	</a>
-</section>
 {{ end }}
