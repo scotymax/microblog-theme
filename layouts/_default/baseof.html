@@ -11,5 +11,6 @@
 	{{ range .Site.Params.plugins_js }}
 	<script src="{{ . }}"></script>
 	{{ end }}
+	<script src="{{ "assets/js/scripts.js" | relURL }}?{{ .Site.Params.theme_seconds }}"></script>
 </body>
 </html>

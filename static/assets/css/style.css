@@ -1,5 +1,6 @@
 /* Fonts 
    Nunito; 300, 300 italic, 400, 400 italic, 700
+   @import url('https://fonts.bunny.net/css?family=nunito:300,300i,400,400i,700');
  */
 /* Variables */
 :root {
@@ -250,8 +251,14 @@ button.button::after,
 	
 }
 .nav-main {
-	
+	text-align: right;
 }
+
+
+
+
+
+
 .nav-pagination {
 	
 }
@@ -279,23 +286,23 @@ button.button::after,
 .profile {
 	
 }
-.profile-photo {
-	
+.profile-avatar {
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	border-radius: 50%;
 }
 .profile-name {
-	
+	margin-bottom: 0;	
 }
 .profile-role {
-	
+	text-align: center;
 }
 /* post */
 .post {
 	
 }
 .headline {
-	
-}
-.dt-published {
 	
 }
 .post-body {
@@ -317,12 +324,6 @@ button.button::after,
 	
 }
 .post-in-reply-to {
-	
-}
-.post-body {
-	
-}
-.post-meta {
 	
 }
 /* reply */
