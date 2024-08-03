@@ -452,7 +452,7 @@ nav.nav-main.open button::after {
 .post-list {}
 .post-item {}
 .post-date {
-	margin-top: 2rem;
+	margin-top: 2.5rem;
 	font-size: 0.75rem;
 	text-transform: uppercase;
 }
@@ -501,9 +501,7 @@ h2.post-date  {
 	vertical-align: middle;
 }
 .post-reply-to-username {}
-
 .nav-pagination {}
-
 /* Plugin: Conversation.js */
 .microblog_conversation {
 	
