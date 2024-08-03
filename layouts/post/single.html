@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="h-entry post">
+<article class="post">
 	<header>
 		{{ with .Title }}
 		<h1 class="p-name">{{ . }}</h1>
@@ -21,18 +21,18 @@
 	<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
 	{{ end }}
 
-	<section id="post-meta" class="clearfix p-author h-card">
-		<a href="/" class="u-url">
+	<section id="post-meta" class="post-meta">
+		<a href="/" class="">
 			{{ if .Params.author }}
-			<img class="u-photo avatar" src="{{ .Params.author.avatar }}" width="96" height="96">
+			<img class="author-avatar" alt="{{ .Params.author.username }} avatar" src="{{ .Params.author.avatar }}" />
 			<div>
-				<span class="p-name dark">{{ .Params.author.name }}</span>
+				<span class="author-name">{{ .Params.author.name }}</span>
 				<span><a href="https://micro.blog/{{ .Params.author.username }}">@{{ .Params.author.username }}</a></span>
 			</div>
 			{{ else }}
-			<img class="u-photo avatar" src="{{ .Site.Author.avatar }}" width="96" height="96">
+			<img class="author-avatar" alt="{{ .Site.Author.username }} avatar" src="{{ .Site.Author.avatar }}" />
 			<div>
-				<span class="p-name dark">{{ .Site.Author.name }}</span>
+				<span class="author-name">{{ .Site.Author.name }}</span>
 				<span><a href="https://micro.blog/{{ .Site.Author.username }}">@{{ .Site.Author.username }}</a></span>
 			</div>
 			{{ end }}

@@ -1,5 +1,4 @@
-<ul id="post-list" class="h-feed">
-
+<div id="post-list" class="post-list">
 {{ if or .IsHome .Site.Params.paginate_categories }}
 	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
 	{{ $list := $paginator.Pages }}
@@ -12,9 +11,7 @@
 		{{ partial "post-item.html" . }}
 	{{ end }}
 {{ end }}
-
-</ul>
-
+</div>
 {{ if .IsHome }}
 	{{ if .Site.Params.paginate_home }}
 		{{ partial "pagination" . }}
