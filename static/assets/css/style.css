@@ -238,6 +238,12 @@ svg.scotymax path {
 	border-radius: calc(1rem - 6px);
 	padding: 0;
 }
+a.framed:hover {
+	border-color: white;
+}
+a.framed::after {
+	display: none;
+}
 /* Partial: Header */
 .header {
 	margin: 2.5rem auto;
@@ -529,8 +535,9 @@ h2.post-date  {
 	column-gap: 5%;
 	row-gap: 5%;
 }
-a.photos-grid-item::after {
-	display: none;
+.photos-grid-item img {
+	aspect-ratio: 1;
+	object-fit: cover;
 }
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
