@@ -176,11 +176,6 @@ tfoot td {
 	margin: auto;
 	padding: 0 12.5px;
 }
-.content {
-	max-width: 600px;
-	margin: auto;
-	padding: 0 12.5px;
-}
 a.button, 
 button.button {
 	margin-bottom: 0.5em;
@@ -527,9 +522,6 @@ h2.post-date  {
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
 	.container {
-		padding: 0 20px;
-	}
-	.content {
 		padding: 0 20px;
 	}
 }
