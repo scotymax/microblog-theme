@@ -127,8 +127,7 @@ ul li:last-child {
 s {
 	opacity: 0.67;
 }
-hr, 
-div.divider {
+hr {
 	clear: both;
 	position: relative;
 	max-width: 600px;
@@ -138,8 +137,7 @@ div.divider {
 	background-color: var(--primary);
 	overflow: visible;
 }
-hr::after, 
-div.divider::after {
+hr::after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -171,16 +169,6 @@ tbody td,
 tfoot td {
 	background-color: var(--background-light);
 }
-header {
-	margin: 2.5rem 0;
-}
-section {
-	box-sizing: border-box;
-	padding: 0;
-}
-section h2:first-of-type {
-	margin-top: 0;
-}
 /* Common */
 .container {
 	max-width: 600px;
@@ -193,8 +181,7 @@ section h2:first-of-type {
 	padding: 0 12.5px;
 }
 a.button, 
-button.button,
-.buttons a {
+button.button {
 	margin-bottom: 0.5em;
 	border: none;
 	border-radius: 1em;
@@ -207,16 +194,14 @@ button.button,
 	line-height: 2.5em;
 }
 a.button:hover,
-button.button:hover,
-.buttons a:hover {
+button.button:hover {
 	background-color: var(--primary);
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 a.button::after, 
-button.button::after, 
-.buttons a::after {
+button.button::after {
 	display: none;
 }
 .note {
@@ -242,7 +227,7 @@ button.button::after,
 	border-radius: calc(1rem - 6px);
 	padding: 0;
 }
-/* Component: Navigation */
+/* Partial: Navigation */
 nav.nav-main {}
 nav.nav-main ul {
 	position: fixed;
@@ -367,8 +352,24 @@ nav.nav-main.open button i {
 nav.nav-main.open button::after {
 	transform: rotate3d(0, 0, 1, -45deg);
 }
-/* Partials */
-.footer {}
+/* Partial: Profile */
+.profile {}
+.profile-avatar {
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	border-radius: 50%;
+}
+.profile-name {
+	margin: 0 auto;	
+}
+.profile-description {
+	text-align: center;
+}
+/* Partial: Footer */
+.footer {
+	margin-bottom: 5rem;
+}
 .footer ul {
 	margin: 0 auto 1.5rem;
 	padding: 0;
@@ -377,10 +378,10 @@ nav.nav-main.open button::after {
 }
 .footer ul li {
 	display: inline-block;
+	margin: 0 0.5rem;
+	font-size: 0.75rem;
 }
-.footer form {
-	
-}
+.footer form {}
 .footer form input.field {
 	display: block;
 	margin: 0 auto;
@@ -397,26 +398,14 @@ nav.nav-main.open button::after {
 	border-color: white;
 	outline: none;
 }
-.nav-pagination {}
-.profile {}
-.profile-avatar {
-	height: 100px;
-	width: 100px;
-	margin: auto;
-	border-radius: 50%;
-}
-.profile-name {
-	margin: 0 auto;	
-}
-.profile-description {
-	text-align: center;
-}
+
 /* Posts */
 .post-list {}
 .post-item {}
 .post-link {}
 .post-date {
 	margin-top: 2rem;
+	font-size: 0.75rem;
 }
 
 .post {}
@@ -434,10 +423,8 @@ nav.nav-main.open button::after {
 .author-name {}
 .post-reply-to {}
 .post-reply-to-username {}
-/* reply */
 
-/* section */
-
+.nav-pagination {}
 
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
