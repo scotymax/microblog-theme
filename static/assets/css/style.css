@@ -530,7 +530,6 @@ h2.post-date  {
 	row-gap: 5%;
 }
 .photos-grid-item {
-	border-radius: 0.5rem;
 	max-width: 100%;
 	height: auto;
 }
