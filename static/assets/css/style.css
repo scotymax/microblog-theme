@@ -180,6 +180,68 @@ section {
 section h2:first-of-type {
 	margin-top: 0;
 }
+/* Common */
+.container {
+	max-width: 600px;
+	margin: auto;
+	padding: 0 12.5px;
+}
+.content {
+	max-width: 600px;
+	margin: auto;
+	padding: 0 12.5px;
+}
+a.button, 
+button.button,
+.buttons a {
+	margin-bottom: 0.5em;
+	border: none;
+	border-radius: 1em;
+	padding: 0.25em 0.75em;
+	background-color: var(--primary-dark);
+	color: white;
+	font-size: 0.75em;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 2.5em;
+}
+a.button:hover,
+button.button:hover,
+.buttons a:hover {
+	background-color: var(--primary);
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+a.button::after, 
+button.button::after, 
+.buttons a::after {
+	display: none;
+}
+.note {
+	border-radius: 1rem;
+	padding: 0.75rem;
+	background-color: var(--background-light);
+	color: var(--primary);
+	font-size: 0.75rem;
+	text-align: center;
+}
+.framed {
+	box-sizing: border-box;
+	border: 2px solid var(--primary);
+	border-radius: 1rem;
+	padding: 4px;
+}
+.framed button, 
+.framed iframe, 
+.framed img {
+	display: block;
+	width: 100%;
+	margin: 0;
+	border-radius: calc(1rem - 6px);
+	padding: 0;
+}
+
 /* Partials */
 .footer {
 	
@@ -260,6 +322,25 @@ section h2:first-of-type {
 .post-body {
 	
 }
+.post-meta {
+	
+}
 /* reply */
 
 /* section */
+
+
+/* Mobile landscape and Tablet portrait */
+@media screen and (min-width:480px) {
+	.container {
+		padding: 0 20px;
+	}
+	.content {
+		padding: 0 20px;
+	}
+}
+@media screen and (min-width:640px) {
+	:root {
+		--stroke: 6px;
+	}
+}
