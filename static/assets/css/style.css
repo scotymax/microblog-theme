@@ -365,10 +365,10 @@ nav.nav-main.open button::after {
 .profile .avatar {
 	margin: auto;
 }
-.profile-name {
+.profile .author-name {
 	margin: 0 auto;	
 }
-.profile-description {
+.profile .description {
 	text-align: center;
 }
 /* Partial: Footer */
@@ -431,6 +431,7 @@ h2.post-date  {
 .post-author {
 	display: flex;
 	gap: 1rem;
+	align-items: center;
 	border-radius: 1rem;
 	padding: 0.75rem;
 	background-color: var(--background-light);
@@ -439,11 +440,11 @@ h2.post-date  {
 	height: 50px;
 	width: 50px;
 }
-.author-name, 
-.author-username {
+.post-author .author-name, 
+.post-author .author-username {
 	display: block;
 	font-size: 0.75rem;
-	line-height: 1;
+	line-height: 1.25;
 }
 .post-reply-to {
 	margin: 2.5rem 0;
