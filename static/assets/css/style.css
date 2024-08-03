@@ -416,9 +416,12 @@ nav.nav-main.open button::after {
 h2.post-date  {
 	margin: 0;
 }
-.post {}
-.post-title {}
-.post-headline {}
+.post {
+	margin: 5rem 0;
+}
+.post header {
+	margin-bottom: 2.5rem;
+}
 .post-body {}
 .post-body img {
 	padding: 4px;
@@ -426,15 +429,24 @@ h2.post-date  {
 	border-radius: 1rem;
 	box-sizing: border-box;
 }
-.post-author {}
+.post footer address {
+	display: flex;
+	gap: 1rem;
+	font-size: 0.75rem;
+	line-height: 1;
+}
 .author-avatar {
 	height: 50px;
 	width: 50px;
 	margin: auto;
 	border-radius: 50%;
 }
-.author-name {}
-.author-username {}
+.author-name {
+	display: block;
+}
+.author-username {
+	display: block;
+}
 
 .post-reply-to {}
 .post-reply-to-username {}
