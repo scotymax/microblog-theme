@@ -414,7 +414,7 @@ nav.nav-main.open button::after {
 }
 /* Partial: Footer */
 .footer {
-	margin: 5rem 0;
+	margin: 5rem auto;
 }
 .footer ul {
 	margin: 0 auto 1.5rem;
