@@ -523,14 +523,14 @@ h2.post-date  {
 	
 }
 /* Page Photos */
-.photos-grid-containe {
+.photos-grid-container {
 	display: grid;
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
 	grid-template-columns: 33% 33% 33%;
 }
 .photos-grid-item {
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	max-width: 100%;
 	height: auto;
 }
