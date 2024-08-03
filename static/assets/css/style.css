@@ -522,6 +522,13 @@ h2.post-date  {
 .microblog_time {
 	
 }
+/* Page Photos */
+.photos-grid-containe {
+	display: grid;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	grid-template-columns: 33% 33% 33%;
+}
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
 	.header, 
