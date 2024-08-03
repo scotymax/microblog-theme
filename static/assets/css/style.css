@@ -205,6 +205,13 @@ a.button::after,
 button.button::after {
 	display: none;
 }
+svg.scotymax {
+	width: 100%;
+	height: auto;
+}
+svg.scotymax path {
+	fill: white;
+}
 .avatar {
 	height: 100px;
 	width: 100px;
@@ -232,6 +239,36 @@ button.button::after {
 	margin: 0;
 	border-radius: calc(1rem - 6px);
 	padding: 0;
+}
+/* Partial: Header */
+.header-logo {
+	position: relative;
+	display: block;
+}
+.header-logo-border {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: var(--stroke);
+	top: var(--stroke);
+	background-color: var(--primary);
+}
+.header-logo::after {
+	content: '';
+	position: absolute;
+	left: auto;
+	right: 0;
+	bottom: var(--stroke);
+	width: 0;
+	height: var(--stroke);
+	background-color: var(--primary);
+	transform: translate(0);
+	transition: 0.25s;
+	opacity: 0;
+}
+.header-logo:hover::after {
+	width: 37.1667%;
+	opacity: 1;
 }
 /* Partial: Navigation */
 nav.nav-main {}
