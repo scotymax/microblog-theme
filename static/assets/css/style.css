@@ -419,17 +419,16 @@ h2.post-date  {
 .post {
 	margin: 5rem 0;
 }
-.post header {
-	margin-bottom: 2.5rem;
+.post-body {
+	margin: 2.5rem 0;
 }
-.post-body {}
 .post-body img {
 	padding: 4px;
 	border: 2px solid var(--primary);
 	border-radius: 1rem;
 	box-sizing: border-box;
 }
-.post footer address {
+.post-author {
 	display: flex;
 	gap: 1rem;
 	font-size: 0.75rem;

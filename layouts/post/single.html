@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
 	{{ end }}
 	<footer>
-		<address>
+		<address class="post-author">
 			{{ if .Params.author }}
 			<a href="https://micro.blog/{{ .Params.author.username }}" rel="author"><img class="author-avatar" alt="{{ .Params.author.username }} avatar" src="{{ .Params.author.avatar }}" /></a>
 			<div>
