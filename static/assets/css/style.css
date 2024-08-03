@@ -431,6 +431,9 @@ h2.post-date  {
 .post-author {
 	display: flex;
 	gap: 1rem;
+	border-radius: 1rem;
+	padding: 0.75rem;
+	background-color: var(--background-light);
 }
 .post-author .avatar {
 	height: 50px;
@@ -444,12 +447,7 @@ h2.post-date  {
 }
 .post-reply-to {
 	margin: 2.5rem 0;
-	border-radius: 1rem;
-	padding: 0.75rem;
-	background-color: var(--background-light);
-	color: var(--primary);
 	font-size: 0.75rem;
-	text-align: center;
 }
 .post-reply-to .avatar {
 	display: inline-block;
