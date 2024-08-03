@@ -525,9 +525,9 @@ h2.post-date  {
 /* Page Photos */
 .photos-grid-container {
 	display: grid;
-	grid-column-gap: 15px;
-	grid-row-gap: 15px;
-	grid-template-columns: 33% 33% 33%;
+	grid-template-columns: 30% 30% 30%;
+	column-gap: 5%;
+	row-gap: 5%;
 }
 .photos-grid-item {
 	border-radius: 0.5rem;
