@@ -368,39 +368,17 @@ nav.nav-main.open button::after {
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 /* Partials */
-.footer {
-	
-}
-.footer ul {
-	
-}
-.nav-pagination {
-	
-}
-.post-item {
-	
-}
-.post-item section header h2 {
-	
-}
-.post-body {
-	
-}
-.post-link {
-	
-}
-.post-date {
-	
-}
-.dt-published {
-	
-}
-.post-list {
-	
-}
-.profile {
-	
-}
+.footer {}
+.footer ul {}
+.nav-pagination {}
+.post-item {}
+.post-item section header h2 {}
+.post-body {}
+.post-link {}
+.post-date {}
+.dt-published {}
+.post-list {}
+.profile {}
 .profile-avatar {
 	height: 100px;
 	width: 100px;
@@ -408,39 +386,27 @@ nav.nav-main.open button::after {
 	border-radius: 50%;
 }
 .profile-name {
-	margin-bottom: 0;	
+	margin: 0 auto;	
 }
 .profile-role {
 	text-align: center;
 }
 /* post */
-.post {
-	
+.post {}
+.headline {}
+.post-body {}
+.post-body img {
+	padding: 4px;
+	border: 2px solid var(--primary);
+	border-radius: 1rem;
+	box-sizing: border-box;
 }
-.headline {
-	
-}
-.post-body {
-	
-}
-.post-meta {
-	
-}
-.author-name {
-	
-}
-.author-name {
-	
-}
-.post {
-	
-}
-.post-title {
-	
-}
-.post-in-reply-to {
-	
-}
+.post-meta {}
+.author-name {}
+.author-name {}
+.post {}
+.post-title {}
+.post-in-reply-to {}
 /* reply */
 
 /* section */
