@@ -237,7 +237,10 @@ svg.scotymax path {
 }
 /* Partial: Header */
 .header {
-	margin: 2.5rem 0;
+	display: block;
+	margin: 2.5rem auto;
+	padding: 0 12.5px;
+	max-width: 600px;
 }
 .header-logo {
 	position: relative;
