@@ -375,7 +375,9 @@ nav.nav-main.open button::after {
 .post-item section header h2 {}
 .post-body {}
 .post-link {}
-.post-date {}
+.post-date {
+	margin-top: 2rem;
+}
 .dt-published {}
 .post-list {}
 .profile {}

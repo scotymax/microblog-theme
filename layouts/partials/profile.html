@@ -1,11 +1,9 @@
 <div class="profile">
-	<section>
-		<header>
-			<a href="/about-me/">
-				<img id="avatar" class="profile-avatar" src="{{ .Site.Author.avatar }}" />
-			</a>
-			<h1 class="profile-name" rel="me">{{ .Site.Author.name }}</h1>
-			<div class="profile-role">{{ .Site.Params.description | safeHTML }}</div>
-		</header>
-	</section>
+	<header>
+		<a href="/about-me/">
+			<img class="profile-avatar" src="{{ .Site.Author.avatar }}" />
+		</a>
+		<h1 class="profile-name" rel="me">{{ .Site.Author.name }}</h1>
+		<div class="profile-description">{{ .Site.Params.description | safeHTML }}</div>
+	</header>
 </div>
