@@ -529,6 +529,11 @@ h2.post-date  {
 	grid-row-gap: 15px;
 	grid-template-columns: 33% 33% 33%;
 }
+.photos-grid-item {
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+}
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
 	.header, 
