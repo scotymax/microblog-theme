@@ -369,7 +369,34 @@ nav.nav-main.open button::after {
 }
 /* Partials */
 .footer {}
-.footer ul {}
+.footer ul {
+	margin: 0 auto 1.5rem;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.footer ul li {
+	display: inline-block;
+}
+.footer form {
+	
+}
+.footer form input.field {
+	display: block;
+	margin: 0 auto;
+	border: 2px solid var(--primary);
+	border-radius: 1rem;
+	padding: 0.5rem 0 0.5rem 0.75rem;
+	color: white;
+	font-size: 0.75rem;
+	font-weight: 400;
+	background-color: var(--background-light);
+	-webkit-appearance: none;
+}
+.footer form input.field:focus-visible {
+	border-color: white;
+	outline: none;
+}
 .nav-pagination {}
 .profile {}
 .profile-avatar {
