@@ -648,10 +648,6 @@ h2.post-date  {
 .microblog_reply_button input:disabled {
 	opacity: 0.5;
 }
-.microblog_reply_textarea textarea:disabled {
-	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='#3b9dff' font-size='15'>Disabled</text></svg>");
-	background-repeat: no-repeat;
-}
 /* Page Photos */
 .photos-grid-container {
 	display: grid;
