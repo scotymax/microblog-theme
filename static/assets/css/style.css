@@ -535,9 +535,6 @@ h2.post-date  {
 	column-gap: 1rem;
 	row-gap: 1rem;
 }
-.photos-grid-item {
-	
-}
 .photos-grid-item img {
 	aspect-ratio: 1;
 	object-fit: cover;
