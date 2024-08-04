@@ -2,14 +2,14 @@
 	<article class="post">
 		<header>
 			{{ with .Title }}
-			<h1>{{ . }}</h1>
+				<h1>{{ . }}</h1>
 			{{ end }}
 			<h2 class="post-date">
 				<a href="{{ .Permalink }}">
 					<time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
 				</a>
 				{{ with .Params.audio }}
-				<script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
+					<script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
 				{{ end }}
 			</h2>
 		</header>
@@ -19,11 +19,11 @@
 		<footer>
 			<address class="post-author">
 				{{ if .Params.author }}
-				<img class="avatar" alt="{{ .Params.author.username }} avatar" src="{{ .Params.author.avatar }}" />
-				<div>
-					<span class="author-name">{{ .Params.author.name }}</span>
-					<span class="author-username"><a href="https://micro.blog/{{ .Params.author.username }}">@{{ .Params.author.username }}</a></span>
-				</div>
+					<img class="avatar" alt="{{ .Params.author.username }} avatar" src="{{ .Params.author.avatar }}" />
+					<div>
+						<span class="author-name">{{ .Params.author.name }}</span>
+						<span class="author-username"><a href="https://micro.blog/{{ .Params.author.username }}">@{{ .Params.author.username }}</a></span>
+					</div>
 				{{ else }}
 				<img class="avatar" alt="{{ .Site.Author.username }} avatar" src="{{ .Site.Author.avatar }}" />
 				<div>
@@ -34,9 +34,13 @@
 			</address>
 		</footer>
 		{{ if .Site.Params.include_conversation }}
-		<hr />
-		<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink | replaceRE "^https?://blog\\.scotymax\\.com/" "https://scotymax.micro.blog/" }}"></script>
-		<!--<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>-->
+			<hr />
+			{{ if .Date }}
+				<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink | replaceRE "^https?://blog\\.scotymax\\.com/" "https://scotymax.micro.blog/" }}"></script>
+			{{ else }}
+				<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+			{{ end }}
 		{{ end }}
 	</article>
+	<div style="display: none;">{{ .Date }}</div>
 {{ end }}
