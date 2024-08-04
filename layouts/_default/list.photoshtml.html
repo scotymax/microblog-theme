@@ -8,7 +8,7 @@
 	{{ range $index, $value := $list }}
 		<a class="photos-grid-item framed" href="{{ .Permalink }}">
 			{{ range first 1 .Params.photos }}
-				<img src="{{ . }}" loading="lazy" />
+				<img width="200" height="200" src="{{ . }}" loading="lazy" />
 			{{ end }}
 		</a>
 	{{ end }}
