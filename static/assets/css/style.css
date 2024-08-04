@@ -629,10 +629,12 @@ h2.post-date  {
 }
 .microblog_reply_signin {
 	font-size: 0.75rem;
+	text-align: center;
+	margin-bottom: 1rem;
 }
 .microblog_reply_textarea, 
 .microblog_reply_button {
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	margin-bottom: 0;
 }
 .microblog_reply_textarea textarea {
