@@ -641,17 +641,16 @@ h2.post-date  {
 	width: 100%;
 	padding-right: 0.75rem;
 }
-.microblog_reply_textarea textarea:disabled {
-	opacity: 0.67;
-	border-color: var(--primary-dark);
-	background-color: var(--background);
-}
 .microblog_reply_button input {
 	margin-bottom: 0;
 }
+.microblog_reply_textarea textarea:disabled, 
 .microblog_reply_button input:disabled {
-	opacity: 0.67;
-	background-color: var(--primary-dark);
+	opacity: 0.5;
+}
+.microblog_reply_textarea textarea:disabled {
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='#3b9dff' font-size='15'>Disabled</text></svg>");
+	background-repeat: no-repeat;
 }
 /* Page Photos */
 .photos-grid-container {
