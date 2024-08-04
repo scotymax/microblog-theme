@@ -1,7 +1,7 @@
-<nav class="nav nav-main">
+<nav class="nav">
 	<ul class="nav-list">
 		{{ if ne .IsHome true }}
-		<li><a class="normal" href="/">Home</a></li>
+		<li><a href="/">Blog</a></li>
 		{{ end }}
 		{{ range .Site.Menus.main }}
 			{{ if .Page.Params.redirect }}
@@ -10,6 +10,8 @@
 			<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
 			{{ end }}
 		{{ end }}
+		<li class="nav-home nav-divider"></li>
+		<li><a href="https://scotymax.com/">Website</a></li>
 	</ul>
 	<button class="nav-toggle" aria-label="Toggle Navigation" onclick="toggleNav()"><i></i></button>
 	<div class="nav-background"></div>

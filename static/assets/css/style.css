@@ -278,8 +278,8 @@ a.framed::after {
 	opacity: 1;
 }
 /* Partial: Navigation */
-nav.nav-main {}
-nav.nav-main ul {
+nav.nav {}
+nav.nav ul {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -299,11 +299,11 @@ nav.nav-main ul {
 	transform: translateX(-100%);
 	z-index: 1;
 }
-nav.nav-main ul li {
+nav.nav ul li {
 	margin: 0;
 	padding: 0;
 }
-nav.nav-main ul li.nav-note {
+nav.nav ul li.nav-note {
 	position: relative;
 	left: 4px;
 	margin-bottom: 12px;
@@ -311,13 +311,13 @@ nav.nav-main ul li.nav-note {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 }
-nav.nav-main ul li.nav-divider {
+nav.nav ul li.nav-divider {
 	width: 40px;
 	height: 2px;
 	margin: 18px auto 12px;
 	background-color: white;
 }
-nav.nav-main button {
+nav.nav button {
 	position: fixed;
 	bottom: 60px;
 	left: 20px;
@@ -330,10 +330,10 @@ nav.nav-main button {
 	background-color: transparent;
 	z-index: 3;
 }
-nav.nav-main button:hover {
+nav.nav button:hover {
 	cursor: pointer;
 }
-nav.nav-main button i {
+nav.nav button i {
 	position: relative;
 	left: 2px;
 	display: block;
@@ -342,8 +342,8 @@ nav.nav-main button i {
 	background-color: var(--primary);
 	transition: background-color .2s .2s ease-in-out;
 }
-nav.nav-main button::before,
-nav.nav-main button::after {
+nav.nav button::before,
+nav.nav button::after {
 	content: '';
 	position: absolute;
 	height: 4px;
@@ -357,17 +357,17 @@ nav.nav-main button::after {
 		width .1s .1s ease-in-out, 
 		transform .1s ease-in-out;
 }
-nav.nav-main button::before {
+nav.nav button::before {
 	top: 10px;
 	left: 2px;
 	width: 40px;
 }
-nav.nav-main button::after {
+nav.nav button::after {
 	top: 30px;
 	left: 22px;
 	width: 20px;
 }
-nav.nav-main .nav-background {
+nav.nav .nav-background {
 	position: fixed;
 	bottom: 50px;
 	left: 0;
@@ -377,11 +377,11 @@ nav.nav-main .nav-background {
 	background-color: var(--primary-dark);
 	z-index: 2;
 }
-nav.nav-main.open ul {
+nav.nav.open ul {
 	transform: translateX(0);
 }
-nav.nav-main.open button::before,
-nav.nav-main.open button::after {
+nav.nav.open button::before,
+nav.nav.open button::after {
 	top: 20px;
 	left: 2px;
 	width: 40px;
@@ -392,14 +392,14 @@ nav.nav-main.open button::after {
 		width .1s .1s ease-in-out, 
 		transform .1s .3s ease-in-out;
 }
-nav.nav-main.open button::before {
+nav.nav.open button::before {
 	transform: rotate3d(0, 0, 1, 45deg);
 }
-nav.nav-main.open button i {
+nav.nav.open button i {
 	transition: background-color .1s 0s ease-in-out;
 	background-color: transparent;
 }
-nav.nav-main.open button::after {
+nav.nav.open button::after {
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 /* Partial: Profile */
