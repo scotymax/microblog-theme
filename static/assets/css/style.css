@@ -539,6 +539,12 @@ h2.post-date  {
 	aspect-ratio: 1;
 	object-fit: cover;
 }
+/* Page Archive */
+.archive-categories {
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:480px) {
 	.header, 
