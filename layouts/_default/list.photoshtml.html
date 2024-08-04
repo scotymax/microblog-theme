@@ -1,4 +1,7 @@
 {{ define "main" }}
+	<header>
+		<h1>{{ .Title }}</h1>
+	</header>
 	<div class="photos-grid-container">
 	{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
 	{{- $len := (len $list) -}}
