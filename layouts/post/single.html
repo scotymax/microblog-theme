@@ -35,7 +35,8 @@
 		</footer>
 		{{ if .Site.Params.include_conversation }}
 		<hr />
-		<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+		<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink | replaceRE "^https?://blog\\.scotymax\\.com/" "https://scotymax.micro.blog/" }}"></script>
+		<!--<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>-->
 		{{ end }}
 	</article>
 {{ end }}
