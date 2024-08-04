@@ -180,7 +180,8 @@ tfoot td {
 	padding: 0 0.625rem;
 }
 a.button, 
-button.button {
+button.button, 
+.microblog_reply_button input {
 	margin-bottom: 0.5em;
 	border: none;
 	border-radius: 1em;
@@ -193,14 +194,16 @@ button.button {
 	line-height: 2.5em;
 }
 a.button:hover,
-button.button:hover {
+button.button:hover, 
+.microblog_reply_button input:hover {
 	background-color: var(--primary);
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 a.button::after, 
-button.button::after {
+button.button::after, 
+.microblog_reply_button input::after {
 	display: none;
 }
 svg.scotymax {
@@ -437,7 +440,8 @@ nav.nav.open button::after {
 .footer form {
 	display: none;
 }
-.footer form input.field {
+.footer form input.field, 
+.microblog_reply_textarea textarea {
 	display: block;
 	box-sizing: border-box;
 	width: 270px;
@@ -451,7 +455,8 @@ nav.nav.open button::after {
 	background-color: var(--background-light);
 	-webkit-appearance: none;
 }
-.footer form input.field:focus-visible {
+.footer form input.field:focus-visible, 
+.microblog_reply_textarea textarea:focus-visible {
 	border-color: white;
 	outline: none;
 }
@@ -594,12 +599,13 @@ h2.post-date  {
 }
 .microblog_user {
 	display: flex;
+	align-items: center;
 	gap: 0.5rem;
 }
 .microblog_avatar {
 	width: 25px;
 	max-width: 25px !important;
-	height: auto;
+	height: 25px;
 	border-radius: 50%;
 }
 .microblog_fullname {
@@ -615,6 +621,24 @@ h2.post-date  {
 	margin-left: 35px;
 	font-size: 0.75rem;
 	text-transform: uppercase;
+}
+.microblog_reply_form {
+	
+}
+.microblog_reply_signin {
+	font-size: 0.75rem;
+}
+.microblog_reply_textarea {
+	
+}
+.microblog_reply_textarea textarea {
+	padding-right: 0.75rem;
+}
+.microblog_reply_button {
+	
+}
+.microblog_reply_button input {
+	
 }
 /* Page Photos */
 .photos-grid-container {
