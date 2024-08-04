@@ -587,25 +587,34 @@ h2.post-date  {
 .nav-pagination {}
 /* Plugin: Conversation.js */
 .microblog_conversation {
-	
+	margin: 2.5rem 0;
 }
 .microblog_post {
-	
+	margin-bottom: 2rem;
 }
 .microblog_user {
-	
+	display: flex;
+	gap: 0.5rem;
 }
 .microblog_avatar {
-	
+	width: 25px;
+	max-width: 25px !important;
+	height: auto;
+	border-radius: 50%;
 }
 .microblog_fullname {
-	
+	display: inline-block;
 }
 .microblog_text {
-	
+	margin: 0.5rem 0 0.5rem 35px;
+}
+.microblog_text p {
+	margin-bottom: 0;
 }
 .microblog_time {
-	
+	margin-left: 35px;
+	font-size: 0.75rem;
+	text-transform: uppercase;
 }
 /* Page Photos */
 .photos-grid-container {
