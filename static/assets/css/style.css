@@ -434,7 +434,9 @@ nav.nav.open button::after {
 	margin: 0 0.5rem;
 	font-size: 0.75rem;
 }
-.footer form {}
+.footer form {
+	display: none;
+}
 .footer form input.field {
 	display: block;
 	box-sizing: border-box;
