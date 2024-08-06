@@ -669,6 +669,9 @@ h2.post-date  {
 		--stroke: 6px;
 		--pad-gap: 20px;
 	}
+	.post-body img {
+		border-radius: 2rem;
+	}
 	.photos-grid-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
