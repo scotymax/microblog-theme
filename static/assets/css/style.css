@@ -174,10 +174,9 @@ tfoot td {
 .main,
 .footer, 
 .container {
-	display: block;
 	max-width: 600px;
 	margin: auto;
-	padding: 0 0.625rem;
+	padding: 0 var(--pad-gap);
 }
 a.button, 
 button.button, 
@@ -249,7 +248,8 @@ a.framed::after {
 }
 /* Partial: Header */
 .header {
-	margin: 4rem auto;
+	margin-bottom: 2rem;
+	padding-top: 4rem;
 }
 .header-logo {
 	position: relative;
@@ -661,21 +661,21 @@ h2.post-date  {
 	border-bottom: 2px solid var(--primary);
 	padding-bottom: 0.75rem;
 }
-/* Mobile landscape and Tablet portrait */
+/* Adjustments for larger screens */
 @media screen and (min-width:480px) {
-	.header, 
-	.main, 
-	.footer, 
-	.container {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
 }
+/* Mobile landscape and Tablet portrait */
 @media screen and (min-width:640px) {
 	:root {
 		--stroke: 6px;
+		--pad-gap: 20px;
 	}
 	.photos-grid-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+/* Tablet landscape and Desktop */
+@media screen and (min-width:960px) {
+}
+@media screen and (min-width:1280px) {
 }
