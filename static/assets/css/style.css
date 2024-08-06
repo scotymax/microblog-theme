@@ -10,8 +10,9 @@
 	--secondary: rgb(224,30,224); /* e01ee0 */
 	--background: rgb(0,10,20); /* 000a14 */
 	--background-light: rgb(0,43,87); /* 002b57 */
-	/* stroke */
+	/* margin, border, padding, gaps */
 	--stroke: calc((100vw - 25px) / 100);
+	--pad-gap: 12.5px;
 }
 /* Tags */
 html {
@@ -72,21 +73,20 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 h1, h2, h3 {
+	margin: 1em 0;
 	font-weight: 400;
 	text-transform: lowercase;
 }
 h1 {
-	margin: 5rem 0;
 	font-size: 4rem;
 }
 h2 {
-	margin: 2.5rem 0;
 	font-size: 3rem;
 }
 h3 {
-	margin: 2rem 0 1.5rem;
+	margin-bottom: 0.75em;
 	border-bottom: 2px solid var(--primary);
-	padding-bottom: 0.4rem;
+	padding-bottom: 0.2em;
 	font-size: 2rem;
 }
 h4, h5, h6 {
@@ -95,13 +95,13 @@ h4, h5, h6 {
 	text-transform: uppercase;
 }
 h4 {
-	font-size: 1rem;
+	font-size: 1.25rem;
 }
 h5 {
-	font-size: 0.75rem;
+	font-size: 1rem;
 }
 h6 {
-	font-size: 0.65rem;
+	font-size: 0.75rem;
 }
 p {
 	margin: 0 0 2rem;
@@ -249,7 +249,7 @@ a.framed::after {
 }
 /* Partial: Header */
 .header {
-	margin: 2.5rem auto;
+	margin: 4rem auto;
 }
 .header-logo {
 	position: relative;
@@ -460,7 +460,7 @@ nav.nav.open button::after {
 	border-color: white;
 	outline: none;
 }
-/* Footer Icon */
+/* Footer */
 .footer-logo {
 	position: relative;
 	display: block;
