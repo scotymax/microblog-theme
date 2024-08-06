@@ -1,18 +1,22 @@
 <nav class="nav">
-	<ul class="nav-list">
-		{{ if ne .IsHome true }}
-		<li><a href="/">Blog</a></li>
-		{{ end }}
-		{{ range .Site.Menus.main }}
-			{{ if .Page.Params.redirect }}
-			<li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
-			{{ else }}
-			<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+	<div class="nav-wrap">
+		<ul class="nav-list">
+			{{ if ne .IsHome true }}
+			<li><a href="/">Blog</a></li>
 			{{ end }}
-		{{ end }}
-		<li class="nav-home nav-divider"></li>
-		<li><a href="/website">About</a></li>
-	</ul>
+			{{ range .Site.Menus.main }}
+				{{ if .Page.Params.redirect }}
+				<li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
+				{{ else }}
+				<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+				{{ end }}
+			{{ end }}
+		</ul>
+		<div class="nav-divider"></div>
+		<ul class="nav-list">
+			<li><a href="/website">About</a></li>
+		</ul>
+	</div>
 	<button class="nav-toggle" aria-label="Toggle Navigation" onclick="toggleNav()"><i></i></button>
 	<div class="nav-background"></div>
 </nav>

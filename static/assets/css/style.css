@@ -281,46 +281,42 @@ a.framed::after {
 	opacity: 1;
 }
 /* Partial: Navigation */
-nav.nav {}
-nav.nav ul {
+.nav {}
+.nav .nav-wrap {
 	position: fixed;
 	left: 0;
 	top: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	width: 100vw;
 	height: 100vh;
 	background: var(--background-light);
+	transition: all 0.2s ease-in-out 0s;
+	transform: translateX(-100%);
+	z-index: 1;
+}
+.nav ul.nav-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 	font-size: 2rem;
 	list-style: none;
 	text-transform: lowercase;
-	transition: all 0.2s ease-in-out 0s;
-	transform: translateX(-100%);
-	z-index: 1;
 }
-nav.nav ul li {
+.nav ul.nav-list li {
 	margin: 0;
-	padding: 0;
 }
-nav.nav ul li.nav-note {
-	position: relative;
-	left: 4px;
-	margin-bottom: 12px;
-	font-size: 0.6rem;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-}
-nav.nav ul li.nav-divider {
+.nav .nav-divider {
+	display: block;
 	width: 40px;
 	height: 2px;
 	margin: 18px auto 12px;
 	background-color: white;
 }
-nav.nav button {
+.nav button {
 	position: fixed;
 	bottom: 60px;
 	left: 20px;
@@ -333,10 +329,10 @@ nav.nav button {
 	background-color: transparent;
 	z-index: 3;
 }
-nav.nav button:hover {
+.nav button:hover {
 	cursor: pointer;
 }
-nav.nav button i {
+.nav button i {
 	position: relative;
 	left: 2px;
 	display: block;
@@ -345,8 +341,8 @@ nav.nav button i {
 	background-color: var(--primary);
 	transition: background-color .2s .2s ease-in-out;
 }
-nav.nav button::before,
-nav.nav button::after {
+.nav button::before,
+.nav button::after {
 	content: '';
 	position: absolute;
 	height: 4px;
@@ -360,17 +356,17 @@ nav.nav button::after {
 		width .1s .1s ease-in-out, 
 		transform .1s ease-in-out;
 }
-nav.nav button::before {
+.nav button::before {
 	top: 10px;
 	left: 2px;
 	width: 40px;
 }
-nav.nav button::after {
+.nav button::after {
 	top: 30px;
 	left: 22px;
 	width: 20px;
 }
-nav.nav .nav-background {
+.nav .nav-background {
 	position: fixed;
 	bottom: 50px;
 	left: 0;
@@ -380,11 +376,11 @@ nav.nav .nav-background {
 	background-color: var(--primary-dark);
 	z-index: 2;
 }
-nav.nav.open ul {
+.nav.open .nav-wrap {
 	transform: translateX(0);
 }
-nav.nav.open button::before,
-nav.nav.open button::after {
+.nav.open button::before,
+.nav.open button::after {
 	top: 20px;
 	left: 2px;
 	width: 40px;
@@ -395,14 +391,14 @@ nav.nav.open button::after {
 		width .1s .1s ease-in-out, 
 		transform .1s .3s ease-in-out;
 }
-nav.nav.open button::before {
+.nav.open button::before {
 	transform: rotate3d(0, 0, 1, 45deg);
 }
-nav.nav.open button i {
+.nav.open button i {
 	transition: background-color .1s 0s ease-in-out;
 	background-color: transparent;
 }
-nav.nav.open button::after {
+.nav.open button::after {
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 /* Partial: Profile */
