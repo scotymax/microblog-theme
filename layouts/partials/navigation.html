@@ -9,10 +9,11 @@
 				<li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
 				{{ else }}
 					{{ if eq .URL .RelPermalink }}
-						<li class="current {{ .URL }} {{ .RelPermalink }}">{{ .Name }}</li>
+						<li class="current">{{ .Name }}</li>
 					{{ else }}
 						<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
 					{{ end }}
+					<!-- {{ .URL }} {{ .RelPermalink }} -->
 				{{ end }}
 			{{ end }}
 		</ul>
