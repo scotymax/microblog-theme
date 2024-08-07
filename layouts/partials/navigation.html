@@ -9,7 +9,7 @@
 				{{ if .Page.Params.redirect }}
 				<li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
 				{{ else }}
-					{{ if eq .URL .Page.RelPermalink }}
+					{{ if eq .URL $curpg }}
 						<li class="current">{{ .Name }}</li>
 					{{ else }}
 						<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
