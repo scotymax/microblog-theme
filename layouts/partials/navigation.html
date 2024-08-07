@@ -3,18 +3,19 @@
 		<ul class="nav-list">
 			{{ $curpg := .Page.RelPermalink }}
 			{{ if ne .IsHome true }}
-			<li><a href="/">Blog</a></li>
+				<li><a href="/">Blog</a></li>
+			{{ else }}
+				<li><span class="current" aria-current="page">Blog</span></li>
 			{{ end }}
 			{{ range .Site.Menus.main }}
 				{{ if .Page.Params.redirect }}
 				<li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
 				{{ else }}
-					{{ if eq .URL $curpg }}
-						<li class="current">{{ .Name }}</li>
-					{{ else }}
+					{{ if ne .URL $curpg }}
 						<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+					{{ else }}
+						<li><span class="current" aria-current="page">{{ .Name }}</span></li>
 					{{ end }}
-					<div style="display:none;">{{ .URL }} {{ $curpg }}</div>
 				{{ end }}
 			{{ end }}
 		</ul>
