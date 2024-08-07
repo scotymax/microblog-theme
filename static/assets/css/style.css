@@ -316,10 +316,20 @@ a.framed::after {
 	margin: 18px auto 12px;
 	background-color: white;
 }
-.nav button {
+.nav .nav-toggle {
 	position: fixed;
-	bottom: 60px;
-	left: 20px;
+	bottom: 40px;
+	left: 0;
+	width: 80px;
+	height: 60px;
+	border-radius: 0 1rem 1rem 0;
+	background-color: var(--primary-dark);
+	z-index: 2;
+}
+.nav .nav-toggle button {
+	position: absolute;
+	top: 8px;
+	left: 18px;
 	width: 44px;
 	height: 44px;
 	margin: 0;
@@ -329,10 +339,10 @@ a.framed::after {
 	background-color: transparent;
 	z-index: 3;
 }
-.nav button:hover {
+.nav .nav-toggle button:hover {
 	cursor: pointer;
 }
-.nav button i {
+.nav .nav-toggle button i {
 	position: relative;
 	left: 2px;
 	display: block;
@@ -341,8 +351,8 @@ a.framed::after {
 	background-color: var(--primary);
 	transition: background-color .2s .2s ease-in-out;
 }
-.nav button::before,
-.nav button::after {
+.nav .nav-toggle button::before,
+.nav .nav-toggle button::after {
 	content: '';
 	position: absolute;
 	height: 4px;
@@ -356,31 +366,21 @@ a.framed::after {
 		width .1s .1s ease-in-out, 
 		transform .1s ease-in-out;
 }
-.nav button::before {
+.nav .nav-toggle button::before {
 	top: 10px;
 	left: 2px;
 	width: 40px;
 }
-.nav button::after {
+.nav .nav-toggle button::after {
 	top: 30px;
 	left: 22px;
 	width: 20px;
 }
-.nav .nav-background {
-	position: fixed;
-	bottom: 50px;
-	left: 0;
-	width: 84px;
-	height: 64px;
-	border-radius: 0 1rem 1rem 0;
-	background-color: var(--primary-dark);
-	z-index: 2;
-}
 .nav.open .nav-wrap {
 	transform: translateX(0);
 }
-.nav.open button::before,
-.nav.open button::after {
+.nav.open .nav-toggle button::before,
+.nav.open .nav-toggle button::after {
 	top: 20px;
 	left: 2px;
 	width: 40px;
@@ -391,14 +391,14 @@ a.framed::after {
 		width .1s .1s ease-in-out, 
 		transform .1s .3s ease-in-out;
 }
-.nav.open button::before {
+.nav.open .nav-toggle button::before {
 	transform: rotate3d(0, 0, 1, 45deg);
 }
-.nav.open button i {
+.nav.open .nav-toggle button i {
 	transition: background-color .1s 0s ease-in-out;
 	background-color: transparent;
 }
-.nav.open button::after {
+.nav.open .nav-toggle button::after {
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 /* Partial: Profile */
@@ -660,9 +660,6 @@ h2.post-date  {
 	border-bottom: 2px solid var(--primary);
 	padding-bottom: 0.75rem;
 }
-/* Adjustments for larger screens */
-@media screen and (min-width:480px) {
-}
 /* Mobile landscape and Tablet portrait */
 @media screen and (min-width:640px) {
 	:root {
@@ -677,7 +674,8 @@ h2.post-date  {
 	}
 }
 /* Tablet landscape and Desktop */
-@media screen and (min-width:960px) {
-}
 @media screen and (min-width:1280px) {
+	.nav ul.nav-list {
+		font-size: 2rem;
+	}
 }
