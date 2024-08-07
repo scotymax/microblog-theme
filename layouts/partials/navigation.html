@@ -1,6 +1,7 @@
 <nav class="nav">
 	<div class="nav-wrap">
 		<ul class="nav-list">
+			{{ $curpg := .Page.RelPermalink }}
 			{{ if ne .IsHome true }}
 			<li><a href="/">Blog</a></li>
 			{{ end }}
@@ -13,7 +14,7 @@
 					{{ else }}
 						<li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
 					{{ end }}
-					<div style="display:none;">{{ .URL }} {{ .Page.RelPermalink }}</div>
+					<div style="display:none;">{{ .URL }} {{ $curpg }}</div>
 				{{ end }}
 			{{ end }}
 		</ul>
