@@ -673,6 +673,13 @@ h2.post-date  {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+/* Tablet portrait */
+@media screen and (min-width:800px) {
+	.nav .nav-toggle {
+		top: 80px;
+		bottom: auto;
+	}
+}
 /* Tablet landscape and Desktop */
 @media screen and (min-width:1280px) {
 	.nav ul.nav-list {
