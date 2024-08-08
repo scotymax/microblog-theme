@@ -133,7 +133,7 @@ hr {
 	position: relative;
 	max-width: 600px;
 	height: var(--stroke);
-	margin: 5rem auto;
+	margin: 4rem auto;
 	border: 0;
 	background-color: var(--primary);
 	overflow: visible;
@@ -422,8 +422,8 @@ a.framed::after {
 }
 /* Partial: Footer */
 .footer {
-	margin-top: 5rem;
-	padding-bottom: 5rem;
+	margin-top: 4rem;
+	padding-bottom: 4rem;
 }
 .footer ul {
 	margin: 0 auto 1.5rem;
