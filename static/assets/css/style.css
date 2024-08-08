@@ -411,6 +411,7 @@ a.framed::after {
 	width: 25px;
 	height: 25px;
 	vertical-align: middle;
+	display: none;
 }
 .profile .author-name {
 	margin: 0 auto;	
