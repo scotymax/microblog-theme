@@ -3,3 +3,6 @@
 </header>
 {{ partial "profile.html" . }}
 {{ partial "navigation.html" . }}
+{{ if .IsHome }}
+<div class="container"><hr /></div>
+{{ end }}
