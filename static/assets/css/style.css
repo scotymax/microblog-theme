@@ -545,6 +545,7 @@ a.framed::after {
 }
 h2.post-date  {
 	margin: 0;
+	text-align: center;
 }
 .post {
 	margin: 2rem 0 4rem;
@@ -557,6 +558,9 @@ h2.post-date  {
 	border: 2px solid var(--primary);
 	border-radius: 1rem;
 	box-sizing: border-box;
+}
+.post-item .post-date {
+	text-align: center;
 }
 .post-author {
 	display: flex;
