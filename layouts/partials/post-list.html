@@ -1,3 +1,4 @@
+<div class="container"><hr /></div>
 <div id="post-list" class="post-list">
 {{ if or .IsHome .Site.Params.paginate_categories }}
 	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
