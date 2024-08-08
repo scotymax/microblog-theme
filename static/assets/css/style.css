@@ -248,7 +248,7 @@ a.framed::after {
 }
 /* Partial: Header */
 .header {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	padding-top: 4rem;
 }
 .header-logo {
@@ -403,7 +403,8 @@ a.framed::after {
 }
 /* Partial: Profile */
 .profile {
-	text-align: center;
+	text-align: right;
+	text-transform: lowercase;
 }
 .profile .avatar {
 	display: inline-block;
