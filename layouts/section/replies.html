@@ -11,18 +11,19 @@
 	{{ end }}
 	</section>
 	<div id="post-list" class="post-list">
-	{{ if .Site.Params.paginate_replies }}
-		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
-		{{ $list := $paginator.Pages }}
-		{{ range $list  }}
-			{{ partial "post-item.html" . }}
+		<hr />
+		{{ if .Site.Params.paginate_replies }}
+			{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+			{{ $list := $paginator.Pages }}
+			{{ range $list  }}
+				{{ partial "post-item.html" . }}
+			{{ end }}
+		{{ else }}
+			{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+			{{ range $list  }}
+				{{ partial "post-item.html" . }}
+			{{ end }}
 		{{ end }}
-	{{ else }}
-		{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
-		{{ range $list  }}
-			{{ partial "post-item.html" . }}
-		{{ end }}
-	{{ end }}
 	</div>
 	{{ if .Site.Params.paginate_replies }}
 		{{ partial "pagination" . }}
