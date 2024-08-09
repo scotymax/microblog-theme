@@ -10,7 +10,7 @@
 		</header>
 	{{ end }}
 	</section>
-	<div id="post-list" class="post-list">
+	<div class="post-list">
 		<hr />
 		{{ if .Site.Params.paginate_replies }}
 			{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
