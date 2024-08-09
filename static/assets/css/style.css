@@ -282,6 +282,11 @@ a.framed::after {
 	width: 37.1667%;
 	opacity: 1;
 }
+.subhead {
+	margin-top: 1rem;
+	text-align: right;
+	text-transform: lowercase;
+}
 /* Partial: Navigation */
 .nav {}
 .nav .nav-wrap {
@@ -409,22 +414,13 @@ a.framed::after {
 }
 /* Partial: Profile */
 .profile {
-	margin-top: 1rem;
-	text-align: right;
-	text-transform: lowercase;
+	text-align: center;
 }
 .profile .avatar {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
 	vertical-align: middle;
-	display: none;
-}
-.profile .author-name {
-	margin: 0 auto;	
-}
-.profile .description {
-	text-align: center;
 }
 /* Partial: Footer */
 .footer {
