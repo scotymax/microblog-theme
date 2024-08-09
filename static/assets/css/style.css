@@ -250,7 +250,7 @@ a.framed::after {
 }
 /* Partial: Header */
 .header {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	padding-top: 4rem;
 }
 .header-logo {
@@ -409,6 +409,7 @@ a.framed::after {
 }
 /* Partial: Profile */
 .profile {
+	margin-top: 1rem;
 	text-align: right;
 	text-transform: lowercase;
 }
