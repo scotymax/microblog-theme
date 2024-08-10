@@ -695,6 +695,7 @@ h2.post-date  {
 @media screen and (min-width:1280px) {
 	.nav .nav-wrap {
 		width: 320px;
+		border-radius: 0 1rem 1rem 0;
 	}
 	.nav ul.nav-list {
 		font-size: 2rem;
