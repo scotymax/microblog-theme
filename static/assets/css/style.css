@@ -3,17 +3,31 @@
    @import url('https://fonts.bunny.net/css?family=nunito:300,300i,400,400i,700');
  */
 /* Variables */
-:root {
-	/* colors */
-	--primary: rgb(59,157,255); /* 3b9dff */
-	--primary-dark: rgb(1,62,125); /* 013e7d */
-	--secondary: rgb(224,30,224); /* e01ee0 */
-	--background: rgb(0,10,20); /* 000a14 */
-	--background-light: rgb(0,43,87); /* 002b57 */
-	/* margin, border, padding, gaps */
-	--stroke: calc((100vw - 25px) / 100);
-	--pad-gap: 12.5px;
-}
+ :root {
+	 /* colors */
+	 /* primary hue: 210 */
+	 --primary: rgb(59,157,255); /* 3b9dff */
+	 --primary-white: rgb(249,252,255); /* f9fcff , text/button text */
+	 --primary-medium: rgb(1,62,125); /* 013e7d , button background */
+	 --primary-dark: rgb(0,43,87); /* 002b57 , background offset */
+	 --primary-black: rgb(0,10,20); /* 000a14 , background */
+	 --secondary: rgb(224,30,224); /* e01ee0 */
+ 
+	 /* theme */
+	 --text: var(--primary-white);
+	 --background: var(--primary-black);
+	 --text-offset: var(--primary);
+	 --bg-offset: var(--primary-dark);
+	 --link: var(--primary);
+	 --accent: var(--primary);
+	 --btn-bg: var(--primary-medium);
+	 --btn-text: var(--primary-white);
+	 --btn-hover: var(--primary);
+	 
+	 /* margin, border, padding, gaps */
+	 --stroke: calc((100vw - 25px) / 100);
+	 --pad-gap: 12.5px;
+ }
 /* Tags */
 html {
 	font-size: 125%;
@@ -27,19 +41,19 @@ html, body {
 body {
 	position: relative;
 	background: var(--background);
-	color: white;
+	color: color: var(--text);
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 }
 a {
 	position: relative;
-	color: var(--primary);
+	color: var(--link);
 	font-weight: 400;
 	text-decoration: none;
 	transition: 0.25s;
 }
 a:hover {
-	color: white;
+	color: color: var(--text);
 	cursor: pointer;
 }
 a::after {
@@ -49,7 +63,7 @@ a::after {
 	bottom: 0;
 	width: 0;
 	height: 2px;
-	background-color: var(--primary);
+	background-color: var(--link);
 	opacity: 0;
 	transform: translate(-50%);
 	transition: 0.25s;
@@ -86,7 +100,7 @@ h2 {
 }
 h3 {
 	margin-bottom: 0.75em;
-	border-bottom: 2px solid var(--primary);
+	border-bottom: 0.05em solid var(--accent);
 	padding-bottom: 0.2em;
 	font-size: 2rem;
 }
@@ -135,7 +149,7 @@ hr {
 	height: var(--stroke);
 	margin: 4rem auto;
 	border: 0;
-	background-color: var(--primary);
+	background-color: var(--accent);
 	overflow: visible;
 }
 hr::after {
@@ -146,7 +160,7 @@ hr::after {
 	right: 0;
 	width: 37.1667%;
 	height: var(--stroke);
-	background-color: var(--primary);
+	background-color: var(--accent);
 }
 table {
 	width: 100%;
@@ -161,14 +175,14 @@ tfoot td {
 	font-size: 0.75rem;
 }
 thead th {
-	border-bottom: 2px solid var(--primary);
+	border-bottom: 2px solid var(--accent);
 }
 tbody th {
 	text-align: left;
 }
 tbody td, 
 tfoot td {
-	background-color: var(--background-light);
+	background-color: var(--bg-offset);
 }
 /* Common */
 .header,
@@ -187,8 +201,8 @@ button.button,
 	border: none;
 	border-radius: 1em;
 	padding: 0.25em 0.75em;
-	background-color: var(--primary-dark);
-	color: white;
+	background-color: var(--btn-bg);
+	color: var(--btn-text);
 	font-size: 0.75em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -197,8 +211,8 @@ button.button,
 a.button:hover,
 button.button:hover, 
 .microblog_reply_button input:hover {
-	background-color: var(--primary);
-	color: white;
+	background-color: var(--btn-hover);
+	color: var(--btn-text);
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -222,14 +236,14 @@ svg.scotymax path {
 .note {
 	border-radius: 1rem;
 	padding: 0.75rem;
-	background-color: var(--background-light);
-	color: var(--primary);
+	background-color: var(--bg-offset);
+	color: var(--text-offset);
 	font-size: 0.75rem;
 	text-align: center;
 }
 .framed {
 	box-sizing: border-box;
-	border: 2px solid var(--primary);
+	border: 2px solid var(--accent);
 	border-radius: 1rem;
 	padding: 4px;
 }
@@ -243,7 +257,7 @@ svg.scotymax path {
 	padding: 0;
 }
 a.framed:hover {
-	border-color: white;
+	border-color: var(--text);
 }
 a.framed::after {
 	display: none;
@@ -263,7 +277,7 @@ a.framed::after {
 	width: 100%;
 	height: var(--stroke);
 	top: var(--stroke);
-	background-color: var(--primary);
+	background-color: var(--accent);
 }
 .header-logo::after {
 	content: '';
@@ -273,7 +287,7 @@ a.framed::after {
 	bottom: var(--stroke);
 	width: 0;
 	height: var(--stroke);
-	background-color: var(--primary);
+	background-color: var(--accent);
 	transform: translate(0);
 	transition: 0.25s;
 	opacity: 0;
@@ -298,7 +312,7 @@ a.framed::after {
 	justify-content: center;
 	width: 100vw;
 	height: 100vh;
-	background: var(--background-light);
+	background: var(--bg-offset);
 	transition: all 0.2s ease-in-out 0s;
 	transform: translateX(-100%);
 	z-index: 1;
@@ -321,7 +335,7 @@ a.framed::after {
 	width: 40px;
 	height: 2px;
 	margin: 18px auto 12px;
-	background-color: white;
+	background-color: var(--text);
 }
 .nav .nav-toggle {
 	position: fixed;
@@ -330,7 +344,7 @@ a.framed::after {
 	width: 80px;
 	height: 60px;
 	border-radius: 0 1rem 1rem 0;
-	background-color: var(--primary-dark);
+	background-color: var(--btn-bg);
 	z-index: 2;
 }
 .nav .nav-toggle button {
@@ -447,13 +461,13 @@ a.framed::after {
 	box-sizing: border-box;
 	width: 270px;
 	margin: 0 auto;
-	border: 2px solid var(--primary);
+	border: 2px solid var(--accent);
 	border-radius: 1rem;
 	padding: 0.5rem 0 0.5rem 0.75rem;
 	color: white;
 	font-size: 0.75rem;
 	font-weight: 400;
-	background-color: var(--background-light);
+	background-color: var(--bg-offset);
 	-webkit-appearance: none;
 }
 .footer form input.field:focus-visible, 
@@ -504,8 +518,8 @@ a.framed::after {
 	box-sizing: border-box;
 	height: 100%;
 	border: solid 2px transparent;
-	border-top-color: var(--primary);
-	border-left-color: var(--primary);
+	border-top-color: var(--accent);
+	border-left-color: var(--accent);
 	border-radius: 50%;
 }
 .clipped {
@@ -555,7 +569,7 @@ h2.post-date  {
 }
 .post-body img {
 	padding: 4px;
-	border: 2px solid var(--primary);
+	border: 2px solid var(--accent);
 	border-radius: 1rem;
 	box-sizing: border-box;
 }
@@ -568,7 +582,7 @@ h2.post-date  {
 	align-items: center;
 	border-radius: 1rem;
 	padding: 0.75rem;
-	background-color: var(--background-light);
+	background-color: var(--bg-offset);
 }
 .post-author .avatar {
 	height: 50px;
@@ -622,7 +636,7 @@ h2.post-date  {
 }
 .microblog_time {
 	margin-left: 35px;
-	border-bottom: 1px solid var(--primary-dark);
+	border-bottom: 1px solid var(--primary-medium);
 	padding-bottom: 1.25rem;
 	font-size: 0.75rem;
 	text-transform: uppercase;
@@ -664,7 +678,7 @@ h2.post-date  {
 /* Page Archive */
 .archive-categories {
 	margin-bottom: 1.5rem;
-	border-bottom: 2px solid var(--primary);
+	border-bottom: 2px solid var(--accent);
 	padding-bottom: 0.75rem;
 }
 /* Mobile landscape and Tablet portrait */
