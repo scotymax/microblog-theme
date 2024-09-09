@@ -691,6 +691,9 @@ h2.post-date  {
 	:root {
 		--pad-gap: 20px;
 	}
+	a {
+		white-space: nowrap;
+	}
 	.post-body img {
 		border-radius: 2rem;
 	}
