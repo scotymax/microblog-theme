@@ -715,3 +715,40 @@ h2.post-date  {
 		font-size: 2rem;
 	}
 }
+/* light theme - by choice */
+body.light-theme {
+	/* theme */
+	--text: var(--primary-black);
+	--background: var(--primary-white);
+	--text-offset: rgb(0,84,173); /* 0054ad */
+	--bg-offset: rgb(214,235,255); /* d6ebff */
+	--link: rgb(0,84,173); /* 0054ad */
+}
+.theme-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.theme-toggle button {
+	width: 44px;
+	border: none;
+	background: none;
+	color: var(--link);
+	line-height: 42px;
+	cursor: pointer;
+}
+.theme-toggle button:hover {
+	color: var(--text);
+}
+.theme-toggle .bi-moon {
+	display: none;
+}
+.theme-toggle .bi-brightness-high {
+	display: inline-block;
+}
+body.light-theme .theme-toggle .bi-moon {
+	display: inline-block;
+}
+body.light-theme .theme-toggle .bi-brightness-high {
+	display: none;
+}
