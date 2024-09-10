@@ -41,7 +41,7 @@ html, body {
 body {
 	position: relative;
 	background: var(--background);
-	color: color: var(--text);
+	color: var(--text);
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 }
