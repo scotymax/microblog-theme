@@ -727,7 +727,7 @@ body.light-theme {
 	--bg-offset: rgb(214,235,255); /* d6ebff */
 	--link: rgb(0,84,173); /* 0054ad */
 }
-button.theme-toggle {
+button.toggle-theme {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -738,18 +738,18 @@ button.theme-toggle {
 	line-height: 42px;
 	cursor: pointer;
 }
-button.theme-toggle:hover {
+button.toggle-theme:hover {
 	color: var(--text);
 }
-button.theme-toggle .bi-moon {
+button.toggle-theme .bi-moon {
 	display: none;
 }
-button.theme-toggle .bi-brightness-high {
+button.toggle-theme .bi-brightness-high {
 	display: inline-block;
 }
-body.light-theme button.theme-toggle .bi-moon {
+body.light-theme button.toggle-theme .bi-moon {
 	display: inline-block;
 }
-body.light-theme button.theme-toggle .bi-brightness-high {
+body.light-theme button.toggle-theme .bi-brightness-high {
 	display: none;
 }
