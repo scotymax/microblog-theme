@@ -8,6 +8,7 @@
 	</main>
 	{{ partial "footer.html" . }}
 	{{ partial "custom_footer.html" . }}
+	{{ partial "toggle-theme.html" . }}
 	<script src="{{ "assets/js/scripts.js" | relURL }}?{{ .Site.Params.theme_seconds }}"></script>
 	{{ range .Site.Params.plugins_js }}
 	<script src="{{ . }}"></script>
