@@ -226,7 +226,7 @@ svg.scotymax {
 	height: auto;
 }
 svg.scotymax path {
-	fill: white;
+	fill: var(--text);
 }
 .avatar {
 	height: 100px;
