@@ -17,6 +17,7 @@ function setCookie(name, value, days = 30) {
 	var maxAge = Math.round(days * 86400);
 	var cookieString = 
 		name + '=' + (encodeURIComponent(value) || '') +
+		'; domain=scotymax.com' +
 		'; SameSite=Strict' +
 		'; max-age=' + maxAge +
 		'; path=/';
