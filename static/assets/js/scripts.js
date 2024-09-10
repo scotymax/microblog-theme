@@ -48,7 +48,7 @@ function toggleLightTheme() {
 		setCookie('light-theme', true, 30);
 	} else {
 		// if cookie light-theme does exist, set cookie to expire
-		document.cookie = "light-theme= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+		document.cookie = "light-theme=; domain=scotymax.com; path=/; expires = Thu, 01 Jan 1970 00:00:00 GMT";
 	}
 }
 const lightTheme = getCookie('light-theme');
