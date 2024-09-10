@@ -44,10 +44,13 @@ function toggleLightTheme() {
 	bodyElem.classList.toggle('light-theme');
 	// if cookie light-theme does not exist, set it
 	if ( lightTheme === null) {
-		setCookie('light-theme', true, 0.125);
+		setCookie('light-theme', true, 30);
 	} else {
 		// if cookie light-theme does exist, set cookie to expire
 		document.cookie = "light-theme= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
 	}
 }
 const lightTheme = getCookie('light-theme');
+if ( lightTheme != null ) {
+	toggleLightTheme();	
+}
