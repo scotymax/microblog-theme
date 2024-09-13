@@ -228,19 +228,19 @@ svg.scotymax {
 svg.scotymax path {
 	fill: var(--text);
 }
-svg.sctmxdj_s {
+.sctmxdj_s {
 	fill-rule: evenodd;
 	fill: var(--primary-white);
 }
-svg.sctmxdj_inner_ring {
+.sctmxdj_inner_ring {
 	fill-rule: evenodd;
 	fill: var(--primary-medium);
 }
-svg.sctmxdj_touch_ring {
+.sctmxdj_touch_ring {
 	fill-rule: evenodd;
 	fill: var(--primary);
 }
-svg.sctmxdj_display {
+.sctmxdj_display {
 	fill: var(--primary-dark);
 }
 .avatar {
