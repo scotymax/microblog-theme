@@ -221,28 +221,6 @@ button.button::after,
 .microblog_reply_button input::after {
 	display: none;
 }
-svg.scotymax {
-	width: 100%;
-	height: auto;
-}
-svg.scotymax path {
-	fill: var(--text);
-}
-.sctmxdj_s {
-	fill-rule: evenodd;
-	fill: var(--primary-white);
-}
-.sctmxdj_inner_ring {
-	fill-rule: evenodd;
-	fill: var(--primary-medium);
-}
-.sctmxdj_touch_ring {
-	fill-rule: evenodd;
-	fill: var(--primary);
-}
-.sctmxdj_display {
-	fill: var(--primary-dark);
-}
 .avatar {
 	height: 100px;
 	width: 100px;
@@ -276,6 +254,28 @@ a.framed:hover {
 }
 a.framed::after {
 	display: none;
+}
+/* Logo */
+.scotymax,
+.sctmxdj-s,
+.sctmxdj-inner-ring,
+.sctmxdj-touch-ring, {
+	fill-rule: evenodd;
+}
+.scotymax {
+	fill: var(--text);
+}
+.sctmxdj-s {
+	fill: var(--primary-white);
+}
+.sctmxdj-inner-ring {
+	fill: var(--primary-medium);
+}
+.sctmxdj-touch-ring {
+	fill: var(--primary);
+}
+.sctmxdj-display {
+	fill: var(--primary-dark);
 }
 /* Partial: Header */
 .header {
