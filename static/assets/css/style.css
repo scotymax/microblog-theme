@@ -228,6 +228,21 @@ svg.scotymax {
 svg.scotymax path {
 	fill: var(--text);
 }
+svg.sctmxdj_s {
+	fill-rule: evenodd;
+	fill: var(--primary-white);
+}
+svg.sctmxdj_inner_ring {
+	fill-rule: evenodd;
+	fill: var(--primary-medium);
+}
+svg.sctmxdj_touch_ring {
+	fill-rule: evenodd;
+	fill: var(--primary);
+}
+svg.sctmxdj_display {
+	fill: var(--primary-dark);
+}
 .avatar {
 	height: 100px;
 	width: 100px;
@@ -488,21 +503,6 @@ a.framed::after {
 }
 .footer-logo svg {
 	padding: 2px;
-}
-.sctmxdj_s {
-	fill-rule: evenodd;
-	fill: var(--primary-white);
-}
-.sctmxdj_inner_ring {
-	fill-rule: evenodd;
-	fill: var(--primary-medium);
-}
-.sctmxdj_touch_ring {
-	fill-rule: evenodd;
-	fill: var(--primary);
-}
-.sctmxdj_display {
-	fill: var(--primary-dark);
 }
 .half-clip {
 	position: absolute;
