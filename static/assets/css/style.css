@@ -6,10 +6,10 @@
  :root {
 	 /* colors */
 	 /* primary hue: 210 */
-	 --primary: rgb(59,157,255); /* 3b9dff */
-	 --primary-white: rgb(249,252,255); /* f9fcff , text/button text */
-	 --primary-medium: rgb(1,62,125); /* 013e7d , button background */
-	 --primary-dark: rgb(0,43,87); /* 002b57 , background offset */
+	 --primary: rgb(59,157,255); /* 3b9dff , accent/lines, touch ring */
+	 --primary-white: rgb(249,252,255); /* f9fcff , text/button text, logo/icon */
+	 --primary-medium: rgb(1,62,125); /* 013e7d , button background, inner ring */
+	 --primary-dark: rgb(0,43,87); /* 002b57 , background offset, display */
 	 --primary-black: rgb(0,10,20); /* 000a14 , background */
 	 --secondary: rgb(224,30,224); /* e01ee0 */
  
