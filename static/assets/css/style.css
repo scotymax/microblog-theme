@@ -486,11 +486,23 @@ a.framed::after {
 .footer-logo::after {
 	display: none;
 }
-.footer-logo img {
-	width: 100px;
-	height: 100px;
-	border: 2px solid transparent;
-	border-radius: 50%;
+.footer-logo svg {
+	padding: 2px;
+}
+.sctmxdj_s {
+	fill-rule: evenodd;
+	fill: var(--primary-white);
+}
+.sctmxdj_inner_ring {
+	fill-rule: evenodd;
+	fill: var(--primary-medium);
+}
+.sctmxdj_touch_ring {
+	fill-rule: evenodd;
+	fill: var(--primary);
+}
+.sctmxdj_display {
+	fill: var(--primary-dark);
 }
 .half-clip {
 	position: absolute;
