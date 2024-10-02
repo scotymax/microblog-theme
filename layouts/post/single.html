@@ -6,7 +6,7 @@
 			{{ end }}
 			<h2 class="post-date">
 				<a href="{{ .Permalink }}">
-					<time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+					<time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "2 Jan 2006" }}</time>
 				</a>
 				{{ with .Params.audio }}
 					<script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
